@@ -1,0 +1,20 @@
+backend:
+  name: git-gateway
+  branch: main # ⚠️ CONTROLLA: Se il tuo branch principale su GitHub è 'master', cambia 'main' in 'master'!
+
+# Configurazione Immagini AGGIORNATA
+media_folder: "immagini/uploads"  # I file caricati vengono salvati nella cartella 'immagini/uploads'
+public_folder: "/immagini/uploads" # L'URL pubblico per le immagini (relativo alla radice)
+
+collections:
+  - name: "home"
+    label: "Home Page (Testi Principali)"
+    file: "data/data.json" 
+    label_singular: "Home Page"
+    fields:
+      - {label: "Titolo Principale (KEAN FC)", name: "hero_title", widget: "string"}
+      - {label: "Slogan/Sottotitolo Hero", name: "hero_slogan", widget: "string"}
+      - {label: "Titolo Sezione Intro", name: "intro_title", widget: "string"}
+      - {label: "Sottotitolo Sezione Intro", name: "intro_subtitle", widget: "text"}
+      - {label: "Titolo Sezione Trionfo", name: "trionfo_title", widget: "string"}
+      - {label: "Sottotitolo Sezione Trionfo", name: "trionfo_subtitle", widget: "text"}
