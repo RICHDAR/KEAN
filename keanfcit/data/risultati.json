@@ -1,0 +1,58 @@
+{
+  "matches": [
+    {
+      "data": "SABATO 14 GIUGNO 2025 | FASE A GIRONI",
+      "kean_score": 5,
+      "opp_score": 4,
+      "opponent_logo": "immagini/celagnorafc.jpg",
+      "opponent_name": "CELAGNORAFC",
+      "status": "VITTORIA",
+      "marcatori": "Ricci (2), Ancona (2), Giustino (1), De Rosa (1)"
+    },
+    {
+      "data": "SABATO 21 GIUGNO 2025 | FASE A GIRONI",
+      "kean_score": 14,
+      "opp_score": 1,
+      "opponent_logo": "immagini/ascdreamvolta.jpg",
+      "opponent_name": "ASC DREAM VOLTA",
+      "status": "VITTORIA RECORD",
+      "marcatori": "Carbonara (4), Pinto (3), Ancona (3), Abatangelo (1), S. De Tullio (1), A. De Girolamo (1), Verna (1)"
+    },
+    {
+      "data": "MERCOLEDÌ 25 GIUGNO 2025 | FASE A GIRONI",
+      "kean_score": 3,
+      "opp_score": 3,
+      "opponent_logo": "immagini/realtriggiano.jpg",
+      "opponent_name": "REAL TRIGGIANO",
+      "status": "PAREGGIO",
+      "marcatori": "De Rosa (2), Ricci (1)"
+    },
+    {
+      "data": "GIOVEDÌ 04 LUGLIO 2025 | FASE A GIRONI",
+      "kean_score": 3,
+      "opp_score": 0,
+      "opponent_logo": "immagini/arcobalenotriggiano.jpg",
+      "opponent_name": "ARCOBALENO TRIGGIANO",
+      "status": "VITTORIA A TAVOLINO",
+      "marcatori": "Arcobaleno ritirato"
+    },
+    {
+      "data": "SABATO 05 LUGLIO 2025 | SEMIFINALE",
+      "kean_score": 4,
+      "opp_score": 3,
+      "opponent_logo": "immagini/celestianwolves.jpg",
+      "opponent_name": "CELESTIAN WOLVES",
+      "status": "VITTORIA",
+      "marcatori": "Biancofiore (2), Carbonara (1), Ancona (1)"
+    },
+    {
+      "data": "FINALE - 14 LUGLIO 2024",
+      "kean_score": 8,
+      "opp_score": 1,
+      "opponent_logo": "immagini/casperfc.jpg",
+      "opponent_name": "CASPER FC",
+      "status": "VITTORIA SCHIACCIANTE E CAMPIONI!",
+      "marcatori": "Goleada totale (dettagli non specificati nel file)"
+    }
+  ]
+}

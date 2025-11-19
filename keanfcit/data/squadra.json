@@ -1,0 +1,127 @@
+{
+  "portieri": [
+    {
+      "nome": "A. ANGIULI",
+      "numero": 1,
+      "ruolo": "Portiere",
+      "foto": "immagini/angiulli.jpg"
+    },
+    {
+      "nome": "A. CARONE",
+      "numero": 12,
+      "ruolo": "Portiere",
+      "foto": "immagini/carone.jpg"
+    }
+  ],
+
+  "difensori": [
+    {
+      "nome": "R. BELLO",
+      "numero": 2,
+      "ruolo": "Difensore",
+      "foto": "immagini/bello.jpg"
+    },
+    {
+      "nome": "F. D'ARGENTO",
+      "numero": 3,
+      "ruolo": "Difensore",
+      "foto": "immagini/dargento.jpg"
+    },
+    {
+      "nome": "S. DE TULLIO",
+      "numero": 5,
+      "ruolo": "Difensore",
+      "foto": "immagini/detullio-simone.JPG"
+    },
+    {
+      "nome": "M. MILEO",
+      "numero": 69,
+      "ruolo": "Difensore",
+      "foto": "immagini/mileo.jpg"
+    },
+    {
+      "nome": "A. VERNA",
+      "numero": 19,
+      "ruolo": "Difensore",
+      "foto": "immagini/verna.jpg"
+    },
+    {
+      "nome": "S. DE BENEDICTIS",
+      "numero": 22,
+      "ruolo": "Difensore",
+      "foto": "immagini/debe.jpg"
+    }
+  ],
+
+  "centrocampisti": [
+    {
+      "nome": "N. ABATANGELO",
+      "numero": 10,
+      "ruolo": "Centrocampista",
+      "foto": "immagini/abatangelo.jpg"
+    },
+    {
+      "nome": "A. CARBONARA",
+      "numero": 11,
+      "ruolo": "Centrocampista",
+      "foto": "immagini/carbonara.jpg"
+    },
+    {
+      "nome": "A. DE GIROLAMO",
+      "numero": 20,
+      "ruolo": "Centrocampista",
+      "foto": "immagini/degirolamo.jpg"
+    },
+    {
+      "nome": "G. DE TULLIO",
+      "numero": 8,
+      "ruolo": "Centrocampista",
+      "foto": "immagini/detullio-giovanni.JPG"
+    },
+    {
+      "nome": "C. RICCI",
+      "numero": 21,
+      "ruolo": "Centrocampista",
+      "foto": "immagini/ricci.jpg"
+    },
+    {
+      "nome": "M. BIANCOFIORE",
+      "numero": 6,
+      "ruolo": "Centrocampista",
+      "foto": "immagini/bianco.jpg"
+    }
+  ],
+
+  "attaccanti": [
+    {
+      "nome": "A. ANCONA",
+      "numero": 7,
+      "ruolo": "Attaccante",
+      "foto": "immagini/ancona.jpg"
+    },
+    {
+      "nome": "G. GIUSTINO",
+      "numero": 17,
+      "ruolo": "Attaccante",
+      "foto": "immagini/giustino.jpg"
+    },
+    {
+      "nome": "G. PINTO",
+      "numero": 9,
+      "ruolo": "Attaccante",
+      "foto": "immagini/pinto.jpg"
+    },
+    {
+      "nome": "G. DE ROSA",
+      "numero": 27,
+      "ruolo": "Attaccante",
+      "foto": "immagini/derosa.jpg"
+    },
+    {
+      "nome": "C. DIFINO",
+      "numero": 14,
+      "ruolo": "Attaccante",
+      "foto": "immagini/difino.jpg"
+    }
+  ]
+}

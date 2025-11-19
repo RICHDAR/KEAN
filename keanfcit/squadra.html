@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kean FC - Rosa Ufficiale</title>
+    <link rel="icon" href="logokean.jpg" type="image/jpeg">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Oswald:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header id="main-header">
+        <img src="logokean.jpg" alt="Kean FC Logo" class="logo-img">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="squadra.html" class="active">Squadra</a></li>
+                <li><a href="risultati.html">Risultati</a></li>
+                <li><a href="stagione.html">Storico</a></li>
+                <li><a href="club.html">Club</a></li>
+                <li><a href="provini.html">Provini</a></li>
+            </ul>
+        </nav>
+        <a href="contatti.html" class="cta-button">CONTATTI</a>
+    </header>
+
+    <section class="section-content" style="padding-top: 120px;">
+        <div class="container">
+            
+            <h2 style="color: var(--bianco-testo);" > La Rosa Ufficiale Kean FC </h2>
+            <div class="section-divider-line"></div>
+            <p class="section-subtitle" style="color: var(--bianco-testo)">
+                I guerrieri che hanno portato la Triggiano Cup a casa. Talento, disciplina e cuore viola.
+            </p>
+
+            <div class="player-card-grid" id="portieri-list"></div>
+<div class="player-card-grid" id="difensori-list"></div>
+<div class="player-card-grid" id="centrocampisti-list"></div>
+<div class="player-card-grid" id="attaccanti-list"></div>
+
+           <h3 style="color: var(--oro-freddo); margin-top: 60px; margin-bottom: 20px; font-family: var(--font-titoli); font-size: 2em; text-align: center;">Staff Tecnico</h3>
+           <div class="player-card-grid" style="grid-template-columns: minmax(250px, 350px); justify-content: center;"> 
+                <div class="player-card" style="border: 3px solid var(--oro-freddo);">
+                    <div class="player-info">
+                        <p class="player-number" style="font-size: 1.8em; color: var(--viola-principale);">COACH</p>
+                        <h4 class="player-name" style="font-size: 2.2em; color: var(--oro-freddo);">A. VERNA</h4>
+                        <p class="player-role" style="color: var(--oro-freddo);">Allenatore Ufficiale</p> 
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer>
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+            <p style="color: var(--bianco-testo);">© 2025 Kean FC | Eleganza Aggressiva.</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/kean_fc_/" style="color: var(--oro-freddo) !important;" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@kean.fc?_t=ZN-90ys26RyFPy&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a>
+                
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const header = document.getElementById('main-header');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 80) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+        });
+    </script>
+    <script>
+fetch('data/squadra.json')
+  .then(res => res.json())
+  .then(data => {
+
+    function renderPlayers(list, id) {
+      const el = document.getElementById(id);
+      if (!el) return;
+      el.innerHTML = list.map(p => `
+        <div class="player-card">
+          <img src="${p.foto}" class="player-photo">
+          <div class="player-info">
+            <p class="player-number">${p.numero}</p>
+            <h4 class="player-name">${p.nome}</h4>
+            <p class="player-role">${p.ruolo}</p>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    renderPlayers(data.portieri, "portieri-list");
+    renderPlayers(data.difensori, "difensori-list");
+    renderPlayers(data.centrocampisti, "centrocampisti-list");
+    renderPlayers(data.attaccanti, "attaccanti-list");
+
+  });
+</script>
+</body>
+</html>

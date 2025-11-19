@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kean FC - News e Aggiornamenti</title>
+    <link rel="icon" href="logokean.jpg" type="image/jpeg">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Oswald:wght=700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header id="main-header">
+        <img src="logokean.jpg" alt="Kean FC Logo" class="logo-img">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="squadra.html">Squadra</a></li>
+                <li><a href="risultati.html">Risultati</a></li>
+                <li><a href="stagione.html">Storico</a></li>
+                <li><a href="club.html">Club</a></li>
+                <li><a href="news.html" class="active">News</a></li>
+            </ul>
+        </nav>
+        <a href="contatti.html" class="cta-button" style="font-size: 1em; padding: 8px 15px;">CONTATTI</a>
+    </header>
+
+    <section class="section-content" style="padding-top: 120px; min-height: 80vh;">
+        <div class="container">
+            
+            <h2>News e Aggiornamenti</h2>
+            <div class="section-divider-line"></div>
+            <p class="section-subtitle">
+                Tutte le ultime notizie, gli annunci ufficiali e le interviste esclusive.
+            </p>
+
+            <div class="news-list">
+                
+                <div class="news-item">
+                    <span class="news-date">31 Ottobre 2025</span>
+                    <h3 class="news-title news-title-viola">Kean FC Conferma Mister Verna per la Prossima Stagione</h3>
+                    <p>La dirigenza ha espresso piena fiducia nell'allenatore Verna Alessandro per guidare la squadra verso nuovi successi. Il lavoro di squadra e la disciplina restano le priorità.</p>
+                    <a href="#">Leggi il Comunicato Ufficiale &raquo;</a>
+                </div>
+                
+                <div class="news-item">
+                    <span class="news-date">25 Settembre 2025</span>
+                    <h3 class="news-title news-title-oro">Aperta la Campagna Iscrizioni al Kean Fan Club</h3>
+                    <p>Unisciti alla famiglia Kean FC! Sono aperte le sottoscrizioni per il Fan Club per la stagione 2025/2026. Tante sorprese ti aspettano!</p>
+                    <a href="#">Iscriviti qui &raquo;</a>
+                </div>
+
+                </div>
+            
+        </div>
+    </section>
+
+    <footer>
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+            <p style="color: var(--bianco-testo);">© 2025 Kean FC | Eleganza Aggressiva.</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/kean_fc_/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const header = document.getElementById('main-header');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 80) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

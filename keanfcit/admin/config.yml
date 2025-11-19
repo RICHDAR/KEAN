@@ -1,0 +1,64 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "immagini/uploads"
+public_folder: "/immagini/uploads"
+
+collections:
+
+  - name: "squadra"
+    label: "Rosa Giocatori"
+    file: "data/squadra.json"
+    fields:
+      - label: Portieri
+        name: portieri
+        widget: list
+        fields:
+          - {label: Nome, name: nome, widget: string}
+          - {label: Numero, name: numero, widget: number}
+          - {label: Ruolo, name: ruolo, widget: string}
+          - {label: Foto, name: foto, widget: image}
+
+      - label: Difensori
+        name: difensori
+        widget: list
+        fields:
+          - {label: Nome, name: nome, widget: string}
+          - {label: Numero, name: numero, widget: number}
+          - {label: Ruolo, name: ruolo, widget: string}
+          - {label: Foto, name: foto, widget: image}
+
+      - label: Centrocampisti
+        name: centrocampisti
+        widget: list
+        fields:
+          - {label: Nome, name: nome, widget: string}
+          - {label: Numero, name: numero, widget: number}
+          - {label: Ruolo, name: ruolo, widget: string}
+          - {label: Foto, name: foto, widget: image}
+
+      - label: Attaccanti
+        name: attaccanti
+        widget: list
+        fields:
+          - {label: Nome, name: nome, widget: string}
+          - {label: Numero, name: numero, widget: number}
+          - {label: Ruolo, name: ruolo, widget: string}
+          - {label: Foto, name: foto, widget: image}
+
+  - name: "risultati"
+    label: "Risultati Partite"
+    file: "data/risultati.json"
+    fields:
+      - label: Partite
+        name: matches
+        widget: list
+        fields:
+          - {label: Data, name: data, widget: string}
+          - {label: Gol Kean, name: kean_score, widget: number}
+          - {label: Gol Avversari, name: opp_score, widget: number}
+          - {label: Logo Avversario, name: opponent_logo, widget: image}
+          - {label: Nome Avversario, name: opponent_name, widget: string}
+          - {label: Stato, name: status, widget: string}
+          - {label: Marcatori, name: marcatori, widget: string}
